@@ -1,31 +1,28 @@
-package Assignment1;
+package Assignment2;
 
 public class Rectangle {
 
-    int length;
-    int breadth;
+    private final int length;
+    private final int breadth;
 
-    public Rectangle(int len , int br){
-        this.length= len;
-        this.breadth= br;
+
+    Rectangle(int length, int breadth){
+        this.length= length;
+        this.breadth= breadth;
+    }
+
+    public void printArea(){
+        int area = length*breadth;
+        System.out.println("Area of Rectangle is "+area);
+    }
+
+
+    public void  printPerimeter(){
+        int perimeter = 2*(length+breadth);
+        System.out.println("Perimeter of Rectangle is "+perimeter);
 
     }
 
-    public void ares(){
-        int a =  length*breadth;
-        System.out.println("Area is "+a);
-    }
 
 
-    public static void main(String[] args) {
-
-        Rectangle r = new Rectangle(4,5);
-        r.ares();
-        Rectangle r1 = new Rectangle(5,8);
-        r1.ares();
-
-
-
-
-    }
 }
